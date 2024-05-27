@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    background-image: linear-gradient(to bottom right, red, yellow);
+    height: 100vh;
+}   
