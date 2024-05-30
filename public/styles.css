@@ -6,4 +6,32 @@
 #root {
     background-image: linear-gradient(to bottom right, red, yellow);
     height: 100vh;
-}   
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+#submission-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#display {
+    width: 60rem;
+    height: 40rem;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
