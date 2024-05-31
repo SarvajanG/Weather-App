@@ -1,14 +1,19 @@
 import React from 'react'
 
-export default function Display() {
+export default function Display(props) {
   return (
     <div id="display">
-        <header>City Name</header>
+        <header>{props.cityName}</header>
         <div id="grid-container">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
+            <div className="grid-item" id="temperature">
+              <p>{props.temperature}°C</p>
+            </div>
+            <div className="grid-item" id="conditions">
+              <p>{props.conditions}</p>
+              <p>H:{props.tempMax}° L:{props.tempMin}°</p>
+            </div>
+            <div className="grid-item">3</div>
+            <div className="grid-item">4</div>
         </div>
     </div>
   )

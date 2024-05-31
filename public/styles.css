@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
 #root {
@@ -31,7 +32,26 @@ header {
 }
 
 #grid-container {
+    height: 31rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.grid-item {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#temperature {
+    font-size: 6rem;
+}
+
+#conditions {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
 }
