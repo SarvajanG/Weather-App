@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <header>Weather</header>
+    <header id="title">Weather</header>
   )
 }
