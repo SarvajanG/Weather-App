@@ -16,13 +16,10 @@ export default function App() {
   const [precipProb, setPrecipProb] = useState("--");
   const [precip, setPrecip] = useState("--");
   const [humidity, setHumidity] = useState("--");
+  const [days, setDays] = useState(["hello","bvye","testing"]);
 
   function getLocation() {
     setCityName(document.getElementById("city-name").value);
-  }
-
-  function fahrenheitToCelsius(fahrenheit) {
-    return Math.round((fahrenheit - 32) * (5/9))
   }
 
   function getData() {
@@ -39,6 +36,7 @@ export default function App() {
       setPrecipProb(res.data.days[0].precipprob);
       setPrecip(Math.round(res.data.days[0].precip * 25.4 * 100)/100);
       setHumidity(res.data.currentConditions.humidity);
+      setDays(res.data.days);
     }).catch(err => {
       console.log(err);
       alert("Invalid Entry");
@@ -63,8 +61,16 @@ export default function App() {
         precipProb = {precipProb}
         precip = {precip}
         humidity = {humidity}
+        days = {days}
 
         />
     </div>
   )
 }
+
+//HELPER FUNCTIONS
+function fahrenheitToCelsius(fahrenheit) {
+  return Math.round((fahrenheit - 32) * (5/9))
+}
+
+export {fahrenheitToCelsius}
