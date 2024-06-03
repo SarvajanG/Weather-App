@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+#root {
+    background-image: linear-gradient(to bottom right, red, yellow);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+#title {
+    font-size: 5vh;
+}
+
+#submission-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    height: 3.5vh;
+    width: 60vmin;
+    margin-right: 2vh;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    height: 3.5vh;
+    width: 15vmin;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom left, rgb(184, 13, 184), rgb(58, 169, 206));
+    font-weight: bold;
+    font-size: 2vmin;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    width: 95vmin;
+    height: 70vh;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 1rem;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom left, rgb(184, 13, 184), rgb(58, 169, 206));
+}
+
+#location {
+    font-size: 4vmin;
+}
+
+#grid-container {
+    height: 55vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3vmin;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-item-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#temperature {
+    font-size: 12vmin;
+}
+
+#feels-like {
+    font-size: 4vmin;
+}
+
+#grid-item-2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 5vmin;
+    gap: 1.8vmin;
+}
+
+#grid-item-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2vmin;
+    gap: 0.2vmin;
+}
+
+#precipitation {
+    font-weight: bold;
+}
+
+#precip-types {
+    display: flex;
+    flex-direction: row;
+    gap: 0.1vmin;
+}
+
+#grid-item-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8vmin;
+    gap: 0.8vmin;
+}
+
+.future-forecast {
+    display: grid;
+    grid-template-columns: 12vmin 20vmin 8vmin 8vmin;
+    width: 100%;
+    text-align: start;
+    gap: 0vw;
+}
+
+.future-forecast p {
+    margin: 0;
+}
