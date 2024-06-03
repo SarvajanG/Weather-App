@@ -19,7 +19,7 @@ header {
 }
 
 #title {
-    font-size: 3rem;
+    font-size: 5vh;
 }
 
 #submission-container {
@@ -29,9 +29,9 @@ header {
 }
 
 input {
-    height: 2rem;
-    width: 20rem;
-    margin-right: 1rem;
+    height: 3.5vh;
+    width: 60vmin;
+    margin-right: 2vh;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
     border: none;
 }
@@ -41,18 +41,19 @@ input:focus {
 }
 
 button {
-    height: 2rem;
-    width: 8rem;
+    height: 3.5vh;
+    width: 15vmin;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
     background-image: linear-gradient(to bottom left, rgb(184, 13, 184), rgb(58, 169, 206));
     font-weight: bold;
+    font-size: 2vmin;
 }
 
 #display {
     display: flex;
     flex-direction: column;
-    width: 60rem;
-    height: 40rem;
+    width: 95vmin;
+    height: 70vh;
     background-color: white;
     border-radius: 50px;
     margin-top: 1rem;
@@ -61,15 +62,15 @@ button {
 }
 
 #location {
-    font-size: 2rem;
+    font-size: 4vmin;
 }
 
 #grid-container {
-    height: 31rem;
+    height: 55vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 2rem;
+    gap: 3vmin;
 }
 
 .grid-item {
@@ -86,18 +87,18 @@ button {
 }
 
 #temperature {
-    font-size: 6rem;
+    font-size: 12vmin;
 }
 
 #feels-like {
-    font-size: 1.5rem;
+    font-size: 4vmin;
 }
 
 #grid-item-2 {
     display: flex;
     flex-direction: column;
-    font-size: 2rem;
-    gap: 2rem;
+    font-size: 5vmin;
+    gap: 1.8vmin;
 }
 
 #grid-item-3 {
@@ -105,8 +106,8 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    gap: 0.3rem;
+    font-size: 3.2vmin;
+    gap: 0.2vmin;
 }
 
 #precipitation {
@@ -116,7 +117,7 @@ button {
 #precip-types {
     display: flex;
     flex-direction: row;
-    gap: 0.2rem;
+    gap: 0.1vmin;
 }
 
 #grid-item-4 {
@@ -124,16 +125,16 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
-    gap: 0.5rem;
+    font-size: 1.8vmin;
+    gap: 0.8vmin;
 }
 
 .future-forecast {
     display: grid;
-    grid-template-columns: 8rem 12rem 5rem 5rem;
+    grid-template-columns: 12vmin 20vmin 8vmin 8vmin;
     width: 100%;
     text-align: start;
-    gap: 0rem;
+    gap: 0vw;
 }
 
 .future-forecast p {
