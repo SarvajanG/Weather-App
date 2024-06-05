@@ -17,12 +17,12 @@ export default function Display(props) {
             </div>
             <div className="grid-item" id="grid-item-3">
               <p id="precipitation">Precipitation</p>
-              <div id="precip-types">Type{props.precipTypes.length > 1 ? "s": ""}: {props.precipTypes.map((item,index) => {
+              {props.precipTypes != null ? <div id="precip-types">Type{props.precipTypes.length > 1 ? "s": ""}: {props.precipTypes.map((item,index) => {
                 return (
                   <p key={index}>{item}{index < props.precipTypes.length - 1 ? ',' : ''}</p>
                 );
               })}
-              </div>
+              </div> : <p>Type: None</p>}
               <p>Chance: {props.precipProb}%</p>
               <p>Amount: {props.precip}mm</p>
               <p>Humidity: {props.humidity}%</p>
