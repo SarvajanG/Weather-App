@@ -1,19 +1,26 @@
 import React from 'react'
-import { fahrenheitToCelsius } from './App';
 
 export default function Display(props) {
+  //Array to map the days of the week to and index number
   const dayNames = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+
+  //Function converts values from fahrenheit to celsius and rounds the number.
+  function fahrenheitToCelsius(fahrenheit) {
+    return Math.round((fahrenheit - 32) * (5/9))
+  }
+
+  //The html that is returned to App.jsx
   return (
     <div id="display">
         <header id="location">{props.location}</header>
         <div id="grid-container">
             <div className="grid-item" id="grid-item-1">
-              <p id="temperature">{props.temperature}°C</p>
-              <p id="feels-like">Feels like: {props.feelsLike}°C</p>
+              <p id="temperature">{fahrenheitToCelsius(props.temperature)}°C</p>
+              <p id="feels-like">Feels like: {fahrenheitToCelsius(props.feelsLike)}°C</p>
             </div>
             <div className="grid-item" id="grid-item-2">
               <p>{props.conditions}</p>
-              <p>H:{props.tempMax}°C L:{props.tempMin}°C</p>
+              <p>H:{fahrenheitToCelsius(props.tempMax)}°C L:{fahrenheitToCelsius(props.tempMin)}°C</p>
             </div>
             <div className="grid-item" id="grid-item-3">
               <p id="precipitation">Precipitation</p>
